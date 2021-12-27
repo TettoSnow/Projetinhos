@@ -68,6 +68,14 @@ header {
     padding: 20px;
  }
 
+ .conteudo div:nth-child(2){
+   margin-top: 60px;
+ }
+
+ .conteudo div:nth-child(4){
+   margin-top: 60px;
+ }
+
  @media screen and (max-width: 800px){
     header{
         display: flex;
