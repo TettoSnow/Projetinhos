@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+header {
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 50px;
+    padding: 0px 25px;
+ }
+
+ header h1 {
+    font-family: 'PT Serif', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -0.045em;
+    margin-bottom: 30px;
+
+ }
+
+.titulos h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+ }
+
+.titulos p {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+ }
+
+ .conteudo div {
+   width: 266px;
+ }
+
+.conteudo img{
+   max-width: 238px;
+}
+
+
+ .conteudo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1000px;
+   margin: 0 auto;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    padding: 20px;
+ }
+
+ @media screen and (max-width: 800px){
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+ }
+
+ @media screen and (max-width: 1000px) {
+    .conteudo {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .conteudo div:nth-child(2){
+      margin-top: 60px;
+    }
+
+    .conteudo div:nth-child(4){
+      margin-top: 60px;
+    }
+
+    .conteudo div:nth-child(6){
+      margin-top: 60px;
+    }
+    
+    .conteudo img {
+       width: 100%;
+    }
+ }
+
+.desc-1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 5px;
+ }
+
+ .desc-2 {
+    font-family: 'PT Serif', serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-transform: uppercase;
+    writing-mode: vertical-lr;
+   float: right;
+   padding: 5px;
+ }
+
